@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:a2_hci/course_page.dart';
 import 'package:a2_hci/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -76,7 +77,14 @@ class HomePageState extends State<HomePage> {
                               ),
                             ),
                             child: MaterialButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => coursePage(),
+                                  ),
+                                );
+                              },
                               child: SizedBox.shrink(),
                             ),
                           ),
