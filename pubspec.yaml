@@ -60,7 +60,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/flutterLogo.png
-    - assets/welcome.jpeg
+    - assets/welcome.png
     - assets/pic1.jpg
     - assets/code.jpeg
     - assets/history.jpg

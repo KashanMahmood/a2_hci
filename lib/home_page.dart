@@ -4,7 +4,6 @@ import 'package:a2_hci/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -27,19 +26,30 @@ class HomePageState extends State<HomePage> {
               child: Container(
                 child: Text(
                   'Welcome back, Kashan',
-                  style: GoogleFonts.shadowsIntoLight(
-                    fontSize: 30,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.deepPurpleAccent,
+                  style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
                   ),
                 ),
               ),
             ),
-
             Container(
               width: MediaQuery.of(context).size.width / 1.2,
+              padding: EdgeInsets.only(bottom: 20,top: 15),
               height: 150,
-              child: Image.asset('assets/welcome.jpeg'),
+              child: Image.asset('assets/welcome.png'),
+            ),
+            Center(
+              child: Text(
+                'Select a course to begin',
+                style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
             ),
             Column(
               children: [
@@ -72,7 +82,15 @@ class HomePageState extends State<HomePage> {
                           ),
                           Container(
                             padding: const EdgeInsets.only(top: 10, bottom: 20),
-                            child: Text('Outer Space'),
+                            child: Text(
+                              'Outer Space',
+                              style: TextStyle(
+                                fontFamily: 'Roboto',
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ],
                       ),
@@ -99,14 +117,21 @@ class HomePageState extends State<HomePage> {
                           ),
                           Container(
                             padding: const EdgeInsets.only(top: 10, bottom: 20),
-                            child: Text('Coding'),
+                            child: Text(
+                              'Computer Science',
+                              style: TextStyle(
+                                fontFamily: 'Roboto',
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ],
                       ),
                     ],
                   ),
                 ),
-                
                 Padding(
                   padding: const EdgeInsets.only(
                       left: 20, right: 20, bottom: 10, top: 10),
@@ -136,7 +161,15 @@ class HomePageState extends State<HomePage> {
                           ),
                           Container(
                             padding: const EdgeInsets.only(top: 10, bottom: 20),
-                            child: Text('History'),
+                            child: Text(
+                              'History',
+                              style: TextStyle(
+                                fontFamily: 'Roboto',
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ],
                       ),
@@ -162,9 +195,16 @@ class HomePageState extends State<HomePage> {
                             ),
                           ),
                           Container(
-                            padding: const EdgeInsets.only(
-                                top: 10, bottom: 20),
-                            child: Text('Science'),
+                            padding: const EdgeInsets.only(top: 10, bottom: 20),
+                            child: Text(
+                              'Science',
+                              style: TextStyle(
+                                fontFamily: 'Roboto',
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ],
                       ),
