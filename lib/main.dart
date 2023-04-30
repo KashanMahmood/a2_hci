@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 50, right: 50, bottom: 10),
+              padding: const EdgeInsets.only(left: 50, right: 50, bottom: 10),   
               child: TextFormField(
                 controller: _passwordController,
                 obscureText: true,
